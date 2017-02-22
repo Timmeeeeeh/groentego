@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="Index/index.css" media="screen">
-<link rel="shortcut icon" href="Index/logo.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="CSS/index.css" media="screen">
+<link rel="shortcut icon" href="logo.png" type="image/x-icon">
 <head>
     <meta charset="UTF-8">
     <title>Groente GO</title>
 </head>
 <body>
-    <div class = "Menu">
-        <ul>
-            <li>
-                <a class="active" href="index.html">Home</a>
-            </li>
 
-            <li>
-                <a href="#doel">Doelen</a>
-            </li>
+<div class="imgslider" style="max-width:500px">
+    <img class="mySlides" src="img1.jpg">
+    <img class="mySlides" src="img2.png">
+    <img class="mySlides" src="img3.jpg">
+</div>
 
-            <li>
-                <a href="aanmelden.html">Aanmelden cursus</a>
+<script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 6000); // Change image every 2 seconds
+    }
+</script>
 
-            </li>
 
-            <li>
-                <a href="#Over">Over Groente GO</a>
-            </li>
 
-            <li>
-                <a href="#contact" >Contact</a>
-            </li>
-        </ul>
-    </div>
 
-    <div class = "Content"></div>
+
+<div class = "Menu">
+    <ul>
+        <li>
+            <a class="active" href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="#doel">Doelen</a>
+        </li>
+
+        <li>
+            <a href="#cursus">Aanmelden cursus</a>
+
+        </li>
+
+        <li>
+            <a href="#Over">Over Groente GO</a>
+        </li>
+
+        <li>
+            <a href="#contact" >Contact</a>
+        </li>
+    </ul>
+</div>
+
+<div class = "Content"></div>
 </body>
 </html>
