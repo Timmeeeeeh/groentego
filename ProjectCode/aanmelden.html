@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="HTML/CSS/index.css" media="screen">
+<link rel="shortcut icon" href="/HTML/IMG/logo.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <title>Aanmelden Cursus</title>
+</head>
+<body>
+    <div class = "Menu">
+    <ul>
+        <li>
+            <a  href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="#doel">Doelen</a>
+        </li>
+
+        <li>
+            <a class="active" href="aanmelden.html">Aanmelden cursus</a>
+
+        </li>
+
+        <li>
+            <a href="#Over">Over Groente GO</a>
+        </li>
+
+        <li>
+            <a href="#contact" >Contact</a>
+        </li>
+    </ul>
+</div>
+
+    <div class = "content">
+        <div class = "login">
+            <form action = "HTML/PHP/aanmelden.php" method = "post">
+                <h1> Cursus aanvragen</h1>
+                <p>School naam:</p>
+                <input type="text" name="school_naam" value="">
+                <p>Aantal leerlingen:</p>
+                <input type="text" name="aantal_leerlingen" value="">
+                <p>Datum:</p>
+                <input type="text" name="datum" value="">
+                <p>Extra opmerkingen:</p>
+                <input type="text" name="Opmerkingen" value=""><br><br>
+                <input type="submit" class = "submit" value="Verstuur!">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
