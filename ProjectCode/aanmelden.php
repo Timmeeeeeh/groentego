@@ -4,7 +4,7 @@ $aantal_leerlingen = $_POST["aantal_leerlingen"];
 $datum = $_POST["datum"];
 $opmerkingen = $_POST["Opmerkingen"];
 $klas = $_POST["klas"];
-$status = TRUE ;
+$status = 'TRUE' ;
 require_once('Aanmelden/db_connection.php');
 
 
@@ -72,7 +72,6 @@ $connectionGroep -> close();
 
 <div class="message">
     <p>
-        Uw aanmelding is:  <?php echo $status; ?> <br>
         U heeft uw school aangemeld met de volgende gegevens:<br>
         School: <?php echo $school_name; ?><br>
         Aantal leerlingen: <?php echo $aantal_leerlingen; ?><br>
