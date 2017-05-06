@@ -1,0 +1,49 @@
+body {
+    background-color: #eaedf2;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#message{
+    background-color: white;
+    position: relative;
+    left: 12.5%;
+    top:  15%;
+    text-align: center;
+    width: 75%;
+    height: 60%;
+    display: block;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+#logo{
+    position: relative;
+}
+
+
+#tekst input.submit {
+    width: 60%;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #0faf00;
+}
+
+ #tekst input.submit:hover {background-color: green;
+}
+
+#tekst input.submit:active {
+    background-color: orange;
+    box-shadow: 0 5px green;
+    transform: translateY(4px);
+}

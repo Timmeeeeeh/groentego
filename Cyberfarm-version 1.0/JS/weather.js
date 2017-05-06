@@ -1,0 +1,2 @@
+var hash_code = '';
+
